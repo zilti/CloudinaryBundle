@@ -60,7 +60,7 @@ class CloudinaryExtension extends AbstractExtension
     public function getUrl($id, $options = [])
     {
         $options = array_merge($this->cloudinary::config(), $options);
-        return $cloudinary::cloudinary_url($id, $options);
+        return $this->cloudinary::cloudinary_url($id, $options);
     }
 
     /**
